@@ -1,0 +1,93 @@
+/* 清除瀏覽器預設設定 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* googlefont字體設定 */
+body {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  background-color: #b5d99c;
+  display: flex;
+  justify-content: space-between; /*Logo 靠最左、導覽靠最右，中間空間自動分配*/
+  align-items: center;
+  padding: 15px 4vw;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header li {
+  list-style: none;
+}
+
+header ul {
+  display: flex;
+  gap: 3vw;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.welcome {
+  background-color: #f5f7dc;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 40px;
+}
+
+main section:not(.welcome) {
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+main section:not(.welcome) img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+main section:not(.welcome) h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+main section:not(.welcome) h4 {
+  display: inline-block;
+  background-color: #b5d99c;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
